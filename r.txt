@@ -1,0 +1,10 @@
+library(RStoolbox)
+library(terra)
+
+# to perform a SMA, use a single endmember p
+em <- data.frame(lsat [c(5294, 47916)])
+rownames(em) <- c("forest", "water")
+
+# unmix the lsat image
+probs <- mesma (img = lsat, em = em)
+plot(probs)
